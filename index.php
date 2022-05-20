@@ -3,10 +3,13 @@ $title = "Brutte parole";
 $text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo nam nisi libero optio laboriosam? Error, ipsa non? Veritatis, a quia incidunt velit 
     quos rerum voluptatem doloribus obcaecati? Saepe, dolorem est recusandae labore rem mollitia deserunt ullam sed distinctio maxime.
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, voluptatum! Eligendi dolor, debitis sint reiciendis, possimus nisi quod unde soluta consequatur dolore, at vitae corrupti ullam excepturi earum blanditiis maiores tempore nesciunt ipsum! Repellendus odit consectetur, maiores provident distinctio libero.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed a, ut blanditiis deleniti distinctio debitis. Aspernatur delectus quod dignissimos consequatur impedit! Laborum quo nihil quod id enim illum minus itaque, eos ad expedita consectetur assumenda laudantium, dolor in reiciendis?";
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed a, ut blanditiis deleniti distinctio debitis. Aspernatur delectus quod dignissimos consequatur impedit! Laborum     quo nihil quod id enim illum minus itaque, eos ad expedita consectetur assumenda laudantium, dolor in reiciendis?";
+$length = strlen($text);
 $_GET["word"];
-var_dump($_GET["word"]);
+var_dump($_GET["word"], $length);
 $new_text = str_replace($_GET["word"], '***', $text);
+$new_length = strlen($new_text);
+var_dump($new_length);
 ?>
 
 <!DOCTYPE html>
